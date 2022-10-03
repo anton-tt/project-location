@@ -1,0 +1,12 @@
+.popup__button-save {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  transition: 2s;
+}
+
+.popup__button-save:hover { 
+  opacity: .6;
+  transition: 1s;
+}

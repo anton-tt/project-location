@@ -1,0 +1,9 @@
+.profile__info-edit_formatting_base {
+  padding-bottom: 16px;
+}
+
+@media screen and (max-width: 780px) {
+  .profile__info-edit_formatting_base {
+    padding-bottom: 14px;
+  }
+}

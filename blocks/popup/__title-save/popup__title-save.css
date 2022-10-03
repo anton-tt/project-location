@@ -1,0 +1,15 @@
+.popup__title-save {
+    /*margin: 0 auto;*/
+    margin: 14px auto 18px;
+    font-weight: 400;  
+    font-size: 18px;
+    line-height: 121%;
+    
+}
+@media screen and (max-width: 780px) {
+    .popup__title-save {
+       
+        font-size: 14px;
+    
+    }
+ }

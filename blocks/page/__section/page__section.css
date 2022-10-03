@@ -1,0 +1,22 @@
+.page__section {
+ max-width: 1280px;  
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-right: 200px;
+  padding-left: 200px;
+ 
+}
+
+/*@media screen and (max-width: 768px) {
+  .page__section {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .page__section {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}*/

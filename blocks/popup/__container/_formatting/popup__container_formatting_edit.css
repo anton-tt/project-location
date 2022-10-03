@@ -1,0 +1,12 @@
+.popup__container_formatting_edit {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000; 
+}
+
+@media screen and (max-width: 768px) {
+  .popup__container_formatting_edit {
+    padding: 0 18px 0;
+  }
+}

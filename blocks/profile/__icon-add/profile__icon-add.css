@@ -1,0 +1,5 @@
+@media screen and (max-width: 780px) {
+    .profile__icon-add {
+        padding-top: 10px;
+    }
+}

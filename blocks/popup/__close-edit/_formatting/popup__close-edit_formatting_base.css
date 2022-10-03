@@ -1,0 +1,12 @@
+.popup__close-edit_formatting_base {
+    justify-content: end;  
+    width: 500px;
+    padding-bottom: 8px;  
+}
+
+@media screen and (max-width: 768px) {
+  .popup__close-edit_formatting_base {
+    width: 100%;
+    padding-bottom: 16px;
+  }
+}

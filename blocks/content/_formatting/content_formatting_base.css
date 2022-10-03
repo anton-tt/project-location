@@ -1,0 +1,18 @@
+.content_formatting_base {
+  max-width: 880px;
+  width: 100%;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 910px) {
+  .content_formatting_base {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content_formatting_base {
+    padding: 0 18px 0;
+  }
+}

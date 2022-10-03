@@ -1,0 +1,4 @@
+.elements__card-like_active {
+  background-image: url('../../../../images/likes-active.png');
+  z-index: 4;
+}

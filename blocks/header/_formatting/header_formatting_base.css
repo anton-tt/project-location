@@ -1,0 +1,19 @@
+.header_formatting_base {
+  max-width: 880px;
+  width: 100%;
+  padding: 45px 0 0;
+  border-bottom: 1px solid rgba(84, 84, 84, .7);
+}
+
+@media screen and (max-width: 910px) {
+  .header_formatting_base {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header_formatting_base {
+    padding: 18px 0 0;
+  }
+}

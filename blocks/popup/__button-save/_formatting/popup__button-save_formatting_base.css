@@ -1,0 +1,14 @@
+.popup__button-save_formatting_base {
+  width: 358px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 2px; 
+}
+
+@media screen and (max-width: 768px) {
+  .popup__button-save_formatting_base {
+    width: 100%;
+    height: 46px;
+  }
+}

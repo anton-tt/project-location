@@ -1,0 +1,9 @@
+.elements__card-inscription {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-left: 21px;
+  padding-right: 30px;     
+} 

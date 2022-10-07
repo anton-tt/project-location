@@ -2,7 +2,9 @@
   display: flex;
   margin: 0;
   flex-direction: column;
-  padding: 19px 30px 21px;
+  padding-right: 30px;
+  padding-left: 30px;
+  justify-content: center;
 }
 
 @media screen and (max-width: 768px) {

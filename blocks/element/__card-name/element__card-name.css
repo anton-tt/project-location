@@ -1,0 +1,9 @@
+.element__card-name {
+  max-width: 210px;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 900;  
+  font-size: 23px;
+}

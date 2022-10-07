@@ -9,96 +9,87 @@
 </head>
 
 <body class="page">
-  <header class="header header_formatting_base">
+  <header class="header">
     <div class="header__logo"></div>
   </header> 
   
-  <main class="content content_formatting_base">
-    <section class="profile profile_formatting_base">
+  <main class="content">
+    <section class="profile">
       <div class="profile__user">
         <img class="profile__photo" src="images/avatar.jpg" alt="Фотография пользователя">
-        <div class="profile__info profile__info_formatting_base">
-          <div class="profile__info-edit profile__info-edit_formatting_base">
-            <p class="profile__user-name">Жак-Ив Кусто</p>
-            <button class="profile__button-edit">
-              <img class="profile__icon-edit" src="images/profile-edit-button.png" alt="Кнопка Редактировать информацию в профиле">
-            </button>
+        <div class="profile__info">
+          <div class="profile__info-edit">
+            <h1 class="profile__user-name">Жак-Ив Кусто</h1>
+            <button class="profile__button-edit" type="button" aria-label="Редактировать информацию в профиле"></button>
           </div>
           <p class="profile__user-profession">Исследователь океана</p>
         </div>  
       </div>
-      <button class="profile__button-add">
-        <img class="profile__icon-add" src="images/profile-add-button.png" alt="Кнопка Добавить информацию в профиль">
-      </button>
+      <button class="profile__button-add" type="button" aria-label="Добавить информацию в профиль"></button>
     </section>
 
     <section class="elements">
       <ul class="elements__cards">
-      <li class="elements__card">
-        <img class="elements__card-photo" src="images/church.png" alt="Фотография Церковь в горах">
-        <div class="elements__card-inscription"> 
-          <p class="elements__card-name">Карачаевск</p>
-          <div class="elements__card-like"></div> <!--elements__card-like_active-->
+      <li class="element">
+        <img class="element__card-photo" src="images/church.png" alt="Фотография Церковь в горах">
+        <div class="element__card-inscription"> 
+          <h2 class="element__card-name">Карачаевск</h2>
+          <button class="element__card-like" type="button" aria-label="Кнопка Нравится"></button> <!--elements__card-like_active-->
         </div>
       </li>
-      <li class="elements__card">
-        <img class="elements__card-photo" src="images/mountain.png" alt="Фотография Вершина">
-        <div class="elements__card-inscription">
-          <p class="elements__card-name">Домбай</p>
-          <div class="elements__card-like"></div> <!--elements__card-like_active-->
+      <li class="element">
+        <img class="element__card-photo" src="images/mountain.png" alt="Фотография Вершина">
+        <div class="element__card-inscription">
+          <h2 class="element__card-name">Домбай</h2>
+          <button class="element__card-like" type="button" aria-label="Кнопка Нравится"></button> <!--elements__card-like_active-->
         </div> 
       </li>
-      <li class="elements__card">
-        <img class="elements__card-photo" src="images/sunset.png" alt="Фотография Горный закат">
-        <div class="elements__card-inscription"> 
-          <p class="elements__card-name">Гора Эльбрус</p>
-          <div class="elements__card-like"></div> <!--elements__card-like_active-->
+      <li class="element">
+        <img class="element__card-photo" src="images/sunset.png" alt="Фотография Горный закат">
+        <div class="element__card-inscription"> 
+          <h2 class="element__card-name">Гора Эльбрус</h2>
+          <button class="element__card-like" type="button" aria-label="Кнопка Нравится"></button> <!--elements__card-like_active-->
         </div>
       </li>
-      <li class="elements__card">
-        <img class="elements__card-photo" src="images/church.png" alt="Фотография Церковь в горах">
-        <div class="elements__card-inscription">
-          <p class="elements__card-name">Карачаево-Черкесия</p>
-          <div class="elements__card-like"></div> <!--elements__card-like_active-->
+      <li class="element">
+        <img class="element__card-photo" src="images/church.png" alt="Фотография Церковь в горах">
+        <div class="element__card-inscription">
+          <h2 class="element__card-name">Карачаево-Черкесия</h2>
+          <button class="element__card-like" type="button" aria-label="Кнопка Нравится"></button> <!--elements__card-like_active-->
         </div>
       </li>
-      <li class="elements__card">
-        <img class="elements__card-photo" src="images/mountain.png" alt="Фотография Вершина">
-        <div class="elements__card-inscription">
-          <p class="elements__card-name">Домбай</p>
-          <div class="elements__card-like"></div> <!--elements__card-like_active-->
+      <li class="element">
+        <img class="element__card-photo" src="images/mountain.png" alt="Фотография Вершина">
+        <div class="element__card-inscription">
+          <h2 class="element__card-name">Домбай</h2>
+          <button class="element__card-like" type="button" aria-label="Кнопка Нравится"></button> <!--elements__card-like_active-->
         </div>
       </li>
-      <li class="elements__card">
-        <img class="elements__card-photo" src="images/sunset.png" alt="Фотография Горный закат">
-        <div class="elements__card-inscription"> 
-          <p class="elements__card-name">Гора Эльбрус</p>
-          <div class="elements__card-like"></div> <!--elements__card-like_active-->
-          <!--<img class="elements__card-like" src="images/likes-absence.png" alt="Значок Седечко">-->
+      <li class="element">
+        <img class="element__card-photo" src="images/sunset.png" alt="Фотография Горный закат">
+        <div class="element__card-inscription"> 
+          <h2 class="element__card-name">Гора Эльбрус</h2>
+          <button class="element__card-like" type="button" aria-label="Кнопка Нравится"></button> <!--elements__card-like_active-->
         </div> 
       </li>
     </ul>
     </section>
   </main> 
 
-  <footer class="footer footer_formatting_base">
+  <footer class="footer">
     <p class="footer__copyright">&copy; Mesto Russia</p>
   </footer>
 
-  <div class="popup popup_formatting_base"> <!--popup_opened-->
-    <div class="popup__container popup__container_formatting_edit">
-      <button class="popup__close-edit popup__close-edit_formatting_base">
-        <img class="popup__icon-close" src="images/сlose-edit.png" alt="Кнопка Закрыть окно Редактировать профиль">
-      </button>
-      <div class="popup__container-edit popup__container-edit_formatting_base">
+  <div class="popup popup_opened"> <!--popup_opened-->
+    <div class="popup__container">
+      <button class="popup__close-edit" type="button" aria-label="Кнопка Закрыть окно Редактировать профиль"></button>
+      <div class="popup__container-edit">
         <h3 class="popup__title-edit">Редактировать профиль</h3>
-        <form class="popup__user">
-          <input class="popup__user-name" type="text" name="username" value="Жак-Ив Кусто">
-          <input class="popup__user-profession" type="text" name="userprofession" value="Исследователь океана">
+        <form class="popup__user" name="user">
+          <input class="popup__info popup__info_input_name" type="text" name="username" value="Жак-Ив Кусто">
+          <input class="popup__info popup__info_input_profession" type="text" name="userprofession" value="Исследователь океана">
         </form>
-        <button class="popup__button-save popup__button-save_formatting_base">
-          <p class="popup__title-save" type="submit"> Сохранить </p>
-        </button>
+        <button class="popup__button-save" type="submit" aria-label="Кнопка Сохранить изменения в профиле">Сохранить</button>
       </div>
     </div>
   </div>

@@ -2,11 +2,20 @@
   display: flex;
   margin: 0 auto;
   box-sizing: border-box;
+  max-width: 880px;
+  width: 100%;
+  flex-direction: column;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 910px) {
   .content {
-
+    padding-right: 24px;
+    padding-left: 24px;
   }
 }
 
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 0 18px 0;
+  }
+}

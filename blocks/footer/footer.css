@@ -2,4 +2,20 @@
   display: flex;
   margin: 0 auto;
   box-sizing: border-box;
+  max-width: 880px;
+  width: 100%;
+  padding: 66px 0 60px;
+}
+
+@media screen and (max-width: 910px) {
+  .footer {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 48px 18px 36px;
+  }
 }

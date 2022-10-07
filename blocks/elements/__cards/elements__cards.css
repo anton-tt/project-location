@@ -1,22 +1,10 @@
 .elements__cards {
   display: grid;
   column-gap: 14px;
-  margin: 0 auto;
+  row-gap: 20px;
+  margin: 0;
   padding: 0;
   width: 100%;
-  row-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr)); 
-}
-
-@media screen and (max-width: 910px) {
-  .elements__cards {
-    width: 582px;
-  }
-}
-
-@media screen and (max-width: 618px) {
-  .elements__cards {
-    justify-items: center;
-    width: 100%;    
-  }
+  grid-template-columns: repeat(auto-fit, 282px);
+  justify-content: center;
 }

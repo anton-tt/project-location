@@ -1,0 +1,18 @@
+.element__card-like {
+  background-image: url('../../../images/likes-absence.png');
+  width: 22px;
+  height: 19px;
+  margin-top: 5px;
+  transition: 2s;
+  padding: 0;
+  border: 0;
+  background-size: cover;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.element__card-like:hover { 
+  opacity: .6;
+  transition: 1s;
+ }

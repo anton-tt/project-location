@@ -6,15 +6,13 @@
   max-width: 450px;
   padding-right: 18px;
   font-weight: 500;  
-  font-size: 42px;
-  line-height: 114.29%;
+  font-size: 39px;
 }
 
 @media screen and (max-width: 768px) {
   .profile__user-name {
     padding-right: 10px;
-    font-size: 27px;
-    line-height: 121%;
+    font-size: 26px;
   }
 }
 

@@ -1,0 +1,10 @@
+.popup__info {
+  width: 100%;
+  padding: 0 0 12px;
+  border-top: 0;  
+  border-right: 0; 
+  border-left: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  font-weight: 400;
+  font-size: 14px;
+}

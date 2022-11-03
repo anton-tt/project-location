@@ -1,6 +1,8 @@
 .element__card-photo {
   width: 282px;
-  min-height: 282px;
+  height: 282px;
   object-fit: cover;
+  color: #fff;
   border-radius:  10px 10px 0 0;
+  cursor: pointer;
 }

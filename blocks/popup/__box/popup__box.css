@@ -1,5 +1,5 @@
-.popup__container-edit {
-  display: flex;
+.popup__box {
+  display: none;
   margin: 0; 
   box-sizing: border-box;   
   flex-direction: column;
@@ -11,7 +11,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .popup__container-edit {
+  .popup__box {
     width: 100%;
     min-height: 322px; 
     padding: 25px 22px;

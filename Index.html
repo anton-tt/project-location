@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Третий проект: Место-Россия </title>
+    <title> Четвёртый проект: Место-Россия (+js) </title>
     <link rel="stylesheet" href="pages/index.css">
 </head>
 
-<body class="page">
+<body class="page" id="container">
   <header class="header">
     <div class="header__logo"></div>
   </header> 
@@ -30,46 +30,46 @@
 
     <section class="elements">
       <ul class="elements__cards">
-      <li class="element">
+     <li class="element element_hidden">
         <img class="element__card-photo" src="images/church.png" alt="Фотография Церковь в горах">
         <div class="element__card-inscription"> 
           <h2 class="element__card-name">Карачаевск</h2>
-          <button class="element__card-like" type="button" aria-label="Кнопка Нравится"></button> <!--element__card-like_active-->
+          <button class="element__card-like" type="button" aria-label="Кнопка Нравится"></button> 
         </div>
       </li>
-      <li class="element">
+      <li class="element element_hidden">
         <img class="element__card-photo" src="images/mountain.png" alt="Фотография Вершина">
         <div class="element__card-inscription">
           <h2 class="element__card-name">Домбай</h2>
-          <button class="element__card-like" type="button" aria-label="Кнопка Нравится"></button> <!--element__card-like_active-->
+          <button class="element__card-like" type="button" aria-label="Кнопка Нравится"></button> 
         </div> 
       </li>
-      <li class="element">
+      <li class="element element_hidden">
         <img class="element__card-photo" src="images/sunset.png" alt="Фотография Горный закат">
         <div class="element__card-inscription"> 
           <h2 class="element__card-name">Гора Эльбрус</h2>
-          <button class="element__card-like" type="button" aria-label="Кнопка Нравится"></button> <!--element__card-like_active-->
+          <button class="element__card-like" type="button" aria-label="Кнопка Нравится"></button> 
         </div>
       </li>
-      <li class="element">
+      <li class="element element_hidden">
         <img class="element__card-photo" src="images/church.png" alt="Фотография Церковь в горах">
         <div class="element__card-inscription">
           <h2 class="element__card-name">Карачаево-Черкесия</h2>
-          <button class="element__card-like" type="button" aria-label="Кнопка Нравится"></button> <!--element__card-like_active-->
+          <button class="element__card-like" type="button" aria-label="Кнопка Нравится"></button> 
         </div>
       </li>
-      <li class="element">
+      <li class="element element_hidden">
         <img class="element__card-photo" src="images/mountain.png" alt="Фотография Вершина">
         <div class="element__card-inscription">
           <h2 class="element__card-name">Домбай</h2>
-          <button class="element__card-like" type="button" aria-label="Кнопка Нравится"></button> <!--element__card-like_active-->
+          <button class="element__card-like" type="button" aria-label="Кнопка Нравится"></button> 
         </div>
       </li>
-      <li class="element">
+      <li class="element element_hidden">
         <img class="element__card-photo" src="images/sunset.png" alt="Фотография Горный закат">
         <div class="element__card-inscription"> 
           <h2 class="element__card-name">Гора Эльбрус</h2>
-          <button class="element__card-like" type="button" aria-label="Кнопка Нравится"></button> <!--element__card-like_active-->
+          <button class="element__card-like" type="button" aria-label="Кнопка Нравится"></button> 
         </div> 
       </li>
     </ul>
@@ -82,16 +82,36 @@
 
   <div class="popup"> <!--popup_opened-->
     <div class="popup__container">
-      <button class="popup__close-edit" type="button" aria-label="Кнопка Закрыть окно Редактировать профиль"></button>
-      <div class="popup__container-edit">
-        <h3 class="popup__title-edit">Редактировать профиль</h3>
-        <form class="popup__user" name="user">
-          <input class="popup__info popup__info_input_name" type="text" name="username" value="Жак-Ив Кусто">
-          <input class="popup__info popup__info_input_profession" type="text" name="userprofession" value="Исследователь океана">
+      <button class="popup__close-button" type="button" aria-label="Кнопка Закрыть всплывающее окно"></button>
+      <div class="popup__box"> <!--popup__box_insert-->
+        <h3 class="popup__title-box"></h3>
+        <form class="popup__user" name="user"> <!--popup__user_insert-->
+          <input class="popup__info popup__info_input_name" type="text" name="username" value="Имя пользователя">
+          <input class="popup__info popup__info_input_profession" type="text" name="userprof" value="Профессия">
         </form>
-        <button class="popup__button-save" type="submit" aria-label="Кнопка Сохранить изменения в профиле">Сохранить</button>
+        <button class="popup__button-edit" type="submit" aria-label="Кнопка Сохранить изменения в профиле">Сохранить</button> <!--popup__button-edit_insert-->
+        <form class="popup__location" id="location" name="location">  <!--popup__location_insert-->
+          <input class="popup__info popup__info_input_place" type="text" name="locplace">
+          <input class="popup__info popup__info_input_link" type="url" name="loclink">
+        </form>
+        <button class="popup__button-add" type="submit" aria-label="Кнопка Сохранить данные карточки">Сохранить</button> <!--popup__button-add_insert-->
+      </div>
+      <div class="popup__card"> <!--popup__card_insert-->
+        <img class="popup__photo">
+        <h2 class="popup__inscription"></h2>
       </div>
     </div>
   </div>
+  <template id="card-element">
+    <li class="element">
+      <img class="element__card-photo">
+      <div class="element__card-inscription">
+        <h2 class="element__card-name"></h2>
+        <button class="element__card-like" type="submit" aria-label="Кнопка Нравится"></button> <!--element__card-like_active-->
+      </div>
+      <div class="element__card-trash" ></div>
+    </li>
+  </template>
+  <script src="index.js"></script>
 </body>
 </html>
